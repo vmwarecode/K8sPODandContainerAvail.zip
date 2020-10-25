@@ -1,0 +1,234 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1-1",
+      "creationTime": 1600957864269,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "38d2774d-2403-4fe5-b504-acbbab5f72bf",
+      "importAttempts": 0,
+      "importComplete": true,
+      "lastUpdateTime": 1600963530401,
+      "lastUpdateUserId": "456b7b33-bd44-40e4-84bd-75c0018bb4fc",
+      "locked": false,
+      "name": "Kubernetes POD and Container Availability",
+      "rank": 0,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "456b7b33-bd44-40e4-84bd-75c0018bb4fc",
+      "widgetInteractions": [],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 1,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "Summary|NumberOfContainers",
+                     "value": "Summary|No of Containers"
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002017KubernetesAdapterK8S-Minion",
+                     "originalText": "Kubernetes Node",
+                     "parentId": "KubernetesAdapter",
+                     "parentText": "Kubernetes",
+                     "text": "Kubernetes Node",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:0_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "POD Availability",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:2_::_",
+                  "sizeBy": {
+                     "metricKey": "Summary|Availability",
+                     "value": "Summary|Availability"
+                  },
+                  "solidColoring": true,
+                  "thenBy": {
+                     "id": "004null002017KubernetesAdapterKubernetesAdapter Instance",
+                     "originalText": "Kubernetes Adapter Instance",
+                     "parentId": "KubernetesAdapter",
+                     "parentText": "Kubernetes",
+                     "text": "Kubernetes Adapter Instance",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  }
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "title": "Pod Availability",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 27,
+               "w": 6,
+               "x": 1,
+               "y": 1
+            },
+            "height": 1520,
+            "id": "6feab494-1c2e-448e-947a-44fe4348f81c",
+            "states": [
+               {
+                  "key": "perm_HeatMap_widget_38d2774d-2403-4fe5-b504-acbbab5f72bf_6feab494-1c2e-448e-947a-44fe4348f81c",
+                  "value": "o%3A"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_38d2774d-2403-4fe5-b504-acbbab5f72bf_6feab494-1c2e-448e-947a-44fe4348f81c",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "Pod Availability",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 1,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "Summary|Availability",
+                     "value": "Summary|Availability"
+                  },
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [],
+                     "includedResources": null
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002017KubernetesAdapterK8S-Pod",
+                     "originalText": "Kubernetes Pod",
+                     "parentId": "KubernetesAdapter",
+                     "parentText": "Kubernetes",
+                     "text": "Kubernetes Pod",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Container Availability",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:3_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": true,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002017KubernetesAdapterK8S-Minion",
+                     "originalText": "Kubernetes Node",
+                     "parentId": "KubernetesAdapter",
+                     "parentText": "Kubernetes",
+                     "text": "Kubernetes Node",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:0_::_"
+                  }
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "title": "Container Availability",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 27,
+               "w": 6,
+               "x": 7,
+               "y": 1
+            },
+            "height": 1520,
+            "id": "1bad8292-4bc0-4d4a-a1af-60cc616f3c30",
+            "states": [{
+               "key": "perm_HeatMap_widget_38d2774d-2403-4fe5-b504-acbbab5f72bf_1bad8292-4bc0-4d4a-a1af-60cc616f3c30",
+               "value": "o%3A"
+            }],
+            "title": "Container Availability",
+            "type": "Heatmap"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "KubernetesAdapter",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "KubernetesAdapter Instance"
+      },
+      {
+         "adapterKindKey": "KubernetesAdapter",
+         "internalId": "resourceKind:id:3_::_",
+         "resourceKindKey": "Container"
+      },
+      {
+         "adapterKindKey": "KubernetesAdapter",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "K8S-Minion"
+      },
+      {
+         "adapterKindKey": "KubernetesAdapter",
+         "internalId": "resourceKind:id:2_::_",
+         "resourceKindKey": "K8S-Pod"
+      }
+   ]},
+   "uuid": "be539f46-5104-422e-926e-166d3b0a7fc9"
+}
